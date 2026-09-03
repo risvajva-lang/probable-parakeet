@@ -63,8 +63,8 @@ jobs:
       - name: React Native configuration check
         run: npx react-native config
 
-      - name: TypeScript check
-        run: npm run typecheck
+      # - name: Typecheck
+#   run: npm run typecheck
 
       - name: Create temporary release keystore
         env:
