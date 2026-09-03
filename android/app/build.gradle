@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.hdoflix.app"
+    namespace "com.hdoflix.app"
     compileSdkVersion 33
 
     defaultConfig {
