@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">نافذة السينما</string>
+    <string name="hdoflix_brand">نافذة السينما</string>
+    <string name="hdoflix_slogan">منصة الأفلام والمسلسلات والأنمي</string>
+    <string name="vip_badge">HD</string>
+    <string name="vip_exclusive">Featured</string>
+    <string name="search_placeholder">Search movies, TV shows, anime...</string>
+    <string name="category_home">Home</string>
+    <string name="category_movies">Movies</string>
+    <string name="category_series">TV Shows</string>
+    <string name="category_anime">Anime</string>
+    <string name="category_genres">Genres</string>
+    <string name="category_favorites">Favorites</string>
+    <string name="category_history">History</string>
+    <string name="category_downloads">Downloads</string>
+    <string name="category_settings">Settings</string>
+    <string name="watch_now">Watch Now</string>
+    <string name="details">Details</string>
+    <string name="all_shows_catalog">Complete Catalog</string>
+    <string name="all_shows_catalog_desc">Browse high-definition movies, TV shows and anime</string>
+    <string name="top_trending">Trending Today ⚡</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="servers_title">Stream Servers</string>
+    <string name="servers_subtitle">Select high-speed server to stream</string>
+    <string name="season_prefix">Season</string>
+    <string name="episode_prefix">Episode</string>
+    <string name="empty_favorites">No favorites saved yet</string>
+    <string name="empty_history">Your watch history is empty</string>
+    <string name="empty_downloads">No active or completed downloads</string>
+    <string name="retry">Retry</string>
+    <string name="error_loading">Failed to load content. Please check connection.</string>
+</resources>

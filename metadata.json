@@ -1,0 +1,6 @@
+{
+  "name": "نافذة السينما",
+  "description": "منصة نافذة السينما VIP المتكاملة لمشاهدة وتصفح الأفلام والمسلسلات والأنمي وسيرفرات البث الفوري",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    
+    <!-- White rounded background matching Video Pulse icon squircle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 22,6 C 13.163,6 6,13.163 6,22 L 6,74 C 6,82.837 13.163,90 22,90 L 74,90 C 82.837,90 90,82.837 90,74 L 90,22 C 90,13.163 82.837,6 74,6 Z" />
+        
+    <!-- Outer concentric ring 1 (light blue) -->
+    <path
+        android:strokeColor="#82B1FF"
+        android:strokeWidth="1.8"
+        android:strokeAlpha="0.75"
+        android:pathData="M 48,16 A 32,32 0 1,1 47.9,16 Z" />
+
+    <!-- Concentric ring 2 (medium blue) -->
+    <path
+        android:strokeColor="#448AFF"
+        android:strokeWidth="2.0"
+        android:strokeAlpha="0.85"
+        android:pathData="M 48,21 A 27,27 0 1,1 47.9,21 Z" />
+
+    <!-- Concentric ring 3 (deep blue) -->
+    <path
+        android:strokeColor="#2979FF"
+        android:strokeWidth="2.2"
+        android:pathData="M 48,26 A 22,22 0 1,1 47.9,26 Z" />
+
+    <!-- Concentric ring 4 (dark blue ring) -->
+    <path
+        android:strokeColor="#1565C0"
+        android:strokeWidth="2.4"
+        android:pathData="M 48,31 A 17,17 0 1,1 47.9,31 Z" />
+
+    <!-- Center dark circular core -->
+    <path
+        android:fillColor="#0A111E"
+        android:pathData="M 48,36 A 12,12 0 1,1 47.9,36 Z" />
+
+    <!-- Play triangle in vibrant cyan-blue -->
+    <path
+        android:fillColor="#29B6F6"
+        android:pathData="M 44.5,41.5 L 54.5,48 L 44.5,54.5 Z" />
+</vector>

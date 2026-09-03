@@ -1,0 +1,36 @@
+# ==============================================================================
+# Cinema Window VIP - High Performance Apache / LiteSpeed Rewrite Engine
+# Clean URL Hierarchy: /{type}/{title-slug}/{season-slug}/{episode-slug}
+# ==============================================================================
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# 1. Protect hidden files and directories
+RewriteRule "(^|/)\.(?!well-known)" - [F]
+
+# 2. Pass existing files and static assets through directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 3. Route all clean URLs to index.php with QSA
+# e.g.:
+# /movie/inception                                     -> index.php?url=movie/inception
+# /tv/game-of-thrones                                 -> index.php?url=tv/game-of-thrones
+# /tv/game-of-thrones/season-1/episode-1              -> index.php?url=tv/game-of-thrones/season-1/episode-1
+# /anime/naruto                                       -> index.php?url=anime/naruto
+# /anime/naruto/shippuden/episode-100                 -> index.php?url=anime/naruto/shippuden/episode-100
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
+
+# ==============================================================================
+# Security & Performance Headers
+# ==============================================================================
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
