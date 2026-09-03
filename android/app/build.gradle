@@ -2,8 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "com.hdoflix.app"
-    namespace "com.hdoflix.app"
-    namespace "com.hdoflix.app"
     compileSdkVersion 33
 
     defaultConfig {
@@ -14,8 +12,18 @@ android {
         versionName "1.0"
     }
 
+    signingConfigs {
+        release {
+            storeFile file(System.getenv("KEYSTORE_PATH") ?: "keystore.jks")
+            storePassword System.getenv("STORE_PASSWORD") ?: "password"
+            keyAlias System.getenv("KEY_ALIAS") ?: "alias"
+            keyPassword System.getenv("KEY_PASSWORD") ?: "password"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
